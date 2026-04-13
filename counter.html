@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anime Counter</title>
+  <link rel="stylesheet" href="mycss/counter.css">
+</head>
+<body>
+
+  <!-- Background Video -->
+  
+    <video id="bg-video" autoplay loop muted playsinline>
+    <source src="./anime.mp4" type="video/mp4">
+    </video>
+
+  <!-- Main Content -->
+  <div class="content">
+
+    <!-- Counter -->
+    <label id="labelcount">0</label>
+
+    <!--Buttons -->
+    <div id="btncontainer">
+      <button class="btn" id="decr">Decrease</button>
+      <button class="btn" id="reset">Reset</button>
+      <button class="btn" id="incr">Increase</button>
+    </div>
+
+    <!--Audio Enable -->
+    <button class="btn start-btn" onclick="enableAudio()">
+      Start Experience
+    </button>
+
+  </div>
+
+
+  <!--JS File -->
+  <script src="counter.js"></script>
+
+</body>
+</html>
